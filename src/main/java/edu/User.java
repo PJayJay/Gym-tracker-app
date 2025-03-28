@@ -2,6 +2,10 @@ package edu;
 
 import java.util.ArrayList;
 
+/**
+ * This is the main user class for our gym software
+ */
+
 public class User {
     private int height;
     private int weight;
