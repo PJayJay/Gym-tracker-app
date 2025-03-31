@@ -13,22 +13,27 @@ public class UserTests {
 
     @BeforeEach
     void setUp() {
-        user = new User();
+        user = new User(70, 150);
         user.goals = new ArrayList<>();
-        user.changeHeight(70); // Initial height
-        user.changeWeight(150); // Initial Weight
+        
     }
 
     @Test
     void testChangeWeight() {
         user.changeWeight(180);
         assertEquals(180, user.weight);
+
+        user.changeWeight(200);
+        assertEquals(200, user.weight);
     }
 
     @Test
     void testChangeHeight() {
         user.changeHeight(75);
         assertEquals(75, user.height);
+
+        user.changeHeight(80);
+        assertEquals(80, user.height);
     }
 
     @Test
