@@ -18,6 +18,10 @@ public class User {
         this.weight=weight;
     }
 
+    public User (){
+        
+    }
+
     public void changeWeight(int newWeight) {
         weight = newWeight;
     }
