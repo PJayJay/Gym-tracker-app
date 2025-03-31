@@ -7,8 +7,8 @@ import java.util.ArrayList;
  */
 
 public class User {
-    private int height;
-    private int weight;
+    public int height;
+    public int weight;
     public int avail;
     public Restriction limits;
     public ArrayList<String> goals;
