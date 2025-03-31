@@ -13,6 +13,11 @@ public class User {
     public Restriction limits;
     public ArrayList<String> goals;
 
+    public User(int height,int weight){
+        this.height=height;
+        this.weight=weight;
+    }
+
     public void changeWeight(int newWeight) {
         weight = newWeight;
     }
@@ -23,5 +28,13 @@ public class User {
 
     public void updateAvailability(int newAvail) {
         avail = newAvail;
+    }
+
+    public int getHeight(){
+        return height;
+    }
+
+    public int getWeight(){
+        return weight;
     }
 }
